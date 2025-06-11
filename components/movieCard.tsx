@@ -17,7 +17,7 @@ const MovieCard = ({
     Poster: 'string';
 }) => {
     return (
-        <Link href={`/movies/${imdbID}`}>
+        <Link href={`/movies/${imdbID}`} asChild>
             <TouchableOpacity className='w-[100px]'>
                 <Image source={{ uri: Poster }} className='w-full h-52 rounded-lg' resizeMode='cover' />
                 <Text className='text-sm font-bold text-white mt-2' numberOfLines={1}>

@@ -45,7 +45,7 @@ export default function Index() {
                                 <>
                                     <Image source={icons.logo} className='w-12 h-10 mt-20 mb-5 mx-auto' />
                                     <Pressable onPress={() => router.push('/search')}>
-                                        <SearchBar placeholder='Search for a movie' editable={false} />
+                                        <SearchBar placeholder='Search for a movie' editable={false} ref={null} />
                                     </Pressable>
 
                                     {trendingMovies && (
